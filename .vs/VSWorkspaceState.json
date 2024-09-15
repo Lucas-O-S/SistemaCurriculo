@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\SiteCurriculo",
-    "\\SiteCurriculo\\SiteCurriculo"
+    "\\SiteCurriculo\\SiteCurriculo",
+    "\\SiteCurriculo\\SiteCurriculo\\Models",
+    "\\SiteCurriculo\\SiteCurriculo\\Views",
+    "\\SiteCurriculo\\SiteCurriculo\\wwwroot"
   ],
   "SelectedNode": "\\SiteCurriculo\\SiteCurriculo.sln",
   "PreviewInSolutionExplorer": false
