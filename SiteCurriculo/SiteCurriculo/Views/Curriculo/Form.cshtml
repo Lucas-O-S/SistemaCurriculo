@@ -1,0 +1,68 @@
+﻿@model CurriculoViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Cadastro de Currículo</h2>
+
+<form action="Salvar" method="post" class="row g-3">
+    <!-- CPF -->
+    <div class="col-md-6">
+        <label for="cpf" class="form-label">CPF</label>
+        <input type="number" class="form-control" id="cpf" name="cpf" value="@Model.cpf" />
+    </div>
+
+    <!-- Nome -->
+    <div class="col-md-6">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" value="@Model.nome" />
+    </div>
+
+    <!-- Endereço -->
+    <div class="col-md-12">
+        <label for="endereco" class="form-label">Endereço</label>
+        <input type="text" class="form-control" id="endereco" name="endereco" value="@Model.endereco" />
+    </div>
+
+    <!-- Telefone -->
+    <div class="col-md-6">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="number" class="form-control" id="telefone" name="telefone" value="@Model.telefone" />
+    </div>
+
+    <!-- Pretensão Salarial -->
+    <div class="col-md-6">
+        <label for="pretencao_salarial" class="form-label">Pretensão Salarial</label>
+        <input type="number" class="form-control" id="pretencao_salarial" name="pretencao_salarial" value="@Model.pretencao_salarial" />
+    </div>
+
+    <!-- Cargo Pretendido -->
+    <div class="col-md-6">
+        <label for="cargo_pretendido" class="form-label">Cargo Pretendido</label>
+        <input type="text" class="form-control" id="cargo_pretendido" name="cargo_pretendido" value="@Model.cargo_pretendido" />
+    </div>
+
+    <!-- Formação Acadêmica -->
+    <div class="col-md-6">
+        <label for="formacao_academica" class="form-label">Formação Acadêmica(separado por virgulas)</label>
+        <input type="text" class="form-control" id="formacao_academica" name="formacao_academica" value="@Model.formacao_academica" />
+    </div>
+
+    <!-- Experiência Profissional -->
+    <div class="col-md-6">
+        <label for="experiencia_profissional" class="form-label">Experiências Profissionais(separado por virgulas)</label>
+        <input type="text" class="form-control" id="experiencia_profissional" name="experiencia_proficional" value="@Model.experiencia_proficional" />
+    </div>
+
+    <!-- Idiomas -->
+    <div class="col-md-6">
+        <label for="idiomas" class="form-label">Idiomas(separado por virgulas)</label>
+        <input type="text" class="form-control" id="idiomas" name="idiomas" value="@Model.idiomas" />
+    </div>
+
+    <!-- Botão Salvar -->
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Salvar Dados</button>
+    </div>
+</form>

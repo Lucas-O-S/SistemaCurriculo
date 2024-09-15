@@ -1,0 +1,54 @@
+﻿@model List<CurriculoViewModel>
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listagem Livros</h2>
+
+
+<a href="/Curriculo/Create"> Novo Negistro </a>
+<br />
+
+<table class="table table-responsive">
+	<tr>
+		<th>AÇÕES</th>
+		<th>CPF</th>
+		<th>NOME</th>
+		<th>ENDEREÇO</th>
+		<th>TELEFONE</th>
+		<th>PRETENÇÃO SALARIAL</th>
+		<th>CARGO PRETENDIDO</th>
+		<th>FORMAÇÃO ACADEMICA</th>
+		<th>EXPERIENCIA PROFICIONAL</th>
+		<th>IDIOMAS</th>
+
+	</tr>
+	@foreach (var curriculo in Model)
+	{
+			<tr>
+				<th>
+						<a href="/Curriculo/Edit?cpf=@curriculo.cpf">Editar</a>
+						<a href = "javascript:ApagarCurriculo(@curriculo.cpf)">Excluir</a>
+
+				</th>
+					<th>@curriculo.cpf</th>
+					<th>@curriculo.nome</th>
+					<th>@curriculo.endereco</th>
+					<th>@curriculo.telefone</th>
+					<th>@curriculo.pretencao_salarial</th>
+					<th>@curriculo.cargo_pretendido</th>
+					<th>@curriculo.formacao_academica</th>
+					<th>@curriculo.experiencia_proficional</th>
+					<th>@curriculo.idiomas</th>
+
+				</tr>
+	}
+</table>
+
+<script>
+	function ApagarCurriculo(cpf){
+		if(confirm("Confirmar a exclusão do registro?")){
+			location.href = "/Curriculo/Delete?cpf=" + cpf;
+		}
+	}
+</script>

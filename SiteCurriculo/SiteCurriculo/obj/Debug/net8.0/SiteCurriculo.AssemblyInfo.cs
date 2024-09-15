@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SiteCurriculo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8f7db944dbde0b6fc0752ac0c7f9cab7bfd4ea8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SiteCurriculo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SiteCurriculo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SiteCurriculo",
+    "\\SiteCurriculo\\SiteCurriculo"
   ],
-  "SelectedNode": "\\SQL",
+  "SelectedNode": "\\SiteCurriculo\\SiteCurriculo.sln",
   "PreviewInSolutionExplorer": false
 }
